@@ -1,0 +1,13 @@
+<h1>Beans#new</h1>
+<p>Find me in app/views/beans/new.html.erb</p>
+
+<%= form_for :beans do |b| %>
+  Name: <%= b.text_field :name %>
+  Roast: <%= b.text_field :roast %>
+  Origin: <%= b.text_field :orgin %>
+  Quantity: <%= b.text_field :quantity %>
+
+  <%= b.submit "Add Bean!" %>
+<%end%>
+
+<%= link_to 'Back to the list', beans_path %>
